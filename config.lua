@@ -1,4 +1,3 @@
--- config.lua
 Config = {}
 
 -- Money limit configuration (changeable per framework if needed)
