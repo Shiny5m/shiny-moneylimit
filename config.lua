@@ -2,7 +2,7 @@ Config = {}
 
 -- Money limit configuration (changeable per framework if needed)
 Config.MoneyLimit = 1000000
-Config.Framework = 'esx' -- options: 'esx', 'qbcore', 'qbox', 'oxcore'
+Config.Framework = 'esx' -- options: 'esx', 'qbcore', 'qbox', 'oxcore', 'oldesx' --- If the script gives an error from esx change this to oldesx
 
 -- Interval in seconds to check all players' money
 Config.CheckInterval = 300
