@@ -1,6 +1,16 @@
 local framework = Config.Framework
 
 local function esx()
+    ESX = exports['es_extended']:getSharedObject()
+    return {
+        getMoney = function(src)
+            local xPlayer = ESX.GetPlayerFromId(src)
+            return xPlayer and xPlayer.getMoney() or 0
+        end
+    }
+end
+
+local function oldesx()
     local ESX = nil
     TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
     return {
